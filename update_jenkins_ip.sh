@@ -6,7 +6,6 @@ JENKINS_CONFIG="/var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml"
 EXPECTED_STATE="active"
 
 # === FUNCTIONS ===
-
 get_eth0_ip() {
     ip -br -4 address show dev eth0 | awk '{print $3}' | cut -d '/' -f1
 }
